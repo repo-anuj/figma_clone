@@ -19,7 +19,11 @@ const Live = () => {
     const handlePointerMove = useCallback((event: React.PointerEvent) => {
       event.preventDefault();
 
-      if (cursorState.mode === CursorMode.Hidden) return;
+      if (cursor == null || cursorState.mode !== CursorMode.ReactionSelector) {
+        
+      }
+
+      })
 
       const x = event.clientX - event.currentTarget.getBoundingClientRect().x;
       const y = event.clientY - event.currentTarget.getBoundingClientRect().y;
