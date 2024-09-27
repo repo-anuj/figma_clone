@@ -4,7 +4,7 @@ import Image from "next/image";
 import { memo } from "react";
 
 // import { navElements } from "@/constants";
-import { ActiveElement, NavbarProps } from "@/types/type";
+import {  NavbarProps } from "@/types/type";
 import ActiveUsers from "./users/ActiveUsers";
 
 const Navbar = ({ activeElement }: NavbarProps) => {
